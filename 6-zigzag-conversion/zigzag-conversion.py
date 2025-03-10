@@ -1,9 +1,7 @@
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
         m = len(s)
-        if m <= numRows:
-            return s
-        elif numRows == 1:
+        if m <= numRows or numRows == 1:
             return s
         else:
             result = ""
